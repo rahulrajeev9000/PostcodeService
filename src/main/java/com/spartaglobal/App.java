@@ -1,13 +1,19 @@
 package com.spartaglobal;
 
-/**
- * Hello world!
- *
- */
+import java.util.Map;
+
 public class App 
 {
+
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Deserialiser deserialiser = new Deserialiser("resources/postcode.json");
+        Map mappedResult = deserialiser.mapped.getResult();
+        Map codes = (Map)mappedResult.get("codes");
+
+        System.out.println(deserialiser.mapped.getStatus());
+        System.out.println( deserialiser.mapped.getResult().get("postcode") );
+        System.out.println(codes.get("parish"));
+
     }
 }

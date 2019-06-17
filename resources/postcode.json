@@ -1,0 +1,38 @@
+{
+  "status": 200,
+  "result": {
+    "postcode": "SE12 0NB",
+    "quality": 1,
+    "eastings": 539962,
+    "northings": 173639,
+    "country": "England",
+    "nhs_ha": "London",
+    "longitude": 0.012569,
+    "latitude": 51.444454,
+    "european_electoral_region": "London",
+    "primary_care_trust": "Lewisham",
+    "region": "London",
+    "lsoa": "Lewisham 023B",
+    "msoa": "Lewisham 023",
+    "incode": "0NB",
+    "outcode": "SE12",
+    "parliamentary_constituency": "Lewisham East",
+    "admin_district": "Lewisham",
+    "parish": "Lewisham, unparished area",
+    "admin_county": null,
+    "admin_ward": "Grove Park",
+    "ced": null,
+    "ccg": "NHS Lewisham",
+    "nuts": "Lewisham and Southwark",
+    "codes": {
+      "admin_district": "E09000023",
+      "admin_county": "E99999999",
+      "admin_ward": "E05000445",
+      "parish": "E43000213",
+      "parliamentary_constituency": "E14000787",
+      "ccg": "E38000098",
+      "ced": "E99999999",
+      "nuts": "UKI44"
+    }
+  }
+}

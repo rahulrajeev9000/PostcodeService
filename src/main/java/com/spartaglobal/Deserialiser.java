@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Deserialiser {
+    
     public DTO mapped;
 
     public Deserialiser(String filename){
