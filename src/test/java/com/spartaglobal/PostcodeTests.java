@@ -4,8 +4,6 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.util.Map;
-
 public class PostcodeTests {
 
     private static Deserialiser deserialiser;
@@ -27,15 +25,16 @@ public class PostcodeTests {
 
     @Test
     public void testCodeParish(){
-        Map mappedResult = deserialiser.mapped.getResult();
-        Map codes = (Map)mappedResult.get("codes");
-        Assert.assertEquals("E43000213", codes.get("parish"));
+        Assert.assertEquals("E43000213", deserialiser.mapped.getParishCode());
     }
 
     @Test
     public void numberOfCodes(){
-        Map mappedResult = deserialiser.mapped.getResult();
-        Map codes = (Map)mappedResult.get("codes");
-        Assert.assertEquals(8, codes.size());
+        Assert.assertEquals(8, deserialiser.mapped.getCodes().size());
+    }
+
+    @Test
+    public void testNutsCode(){
+        Assert.assertEquals("UKI44", deserialiser.mapped.getNutsCode());
     }
 }
