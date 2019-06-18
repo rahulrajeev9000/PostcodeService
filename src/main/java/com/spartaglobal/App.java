@@ -7,6 +7,7 @@ public class App {
         Deserialiser deserialiser = new Deserialiser("resources/postcode.json");
 
         System.out.println(deserialiser.mapped.getStatus());
+        System.out.println(deserialiser.mapped.getPostcode());
         System.out.println( deserialiser.mapped.getResult().get("postcode") );
         System.out.println(deserialiser.mapped.getParishCode());
 
